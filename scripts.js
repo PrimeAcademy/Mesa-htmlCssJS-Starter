@@ -96,3 +96,67 @@ theSimpsons.unshift('abe')
 console.log(theSimpsons);
 theSimpsons.shift()
 console.log(theSimpsons);
+
+// while(condition) {
+//     //run this stuff
+// }
+// while (i < 10){
+//     text += "The Number is" + i
+//    i++
+// }
+
+// for of
+
+// for (let varriable of array){
+//     //some code
+// }
+
+let primes = [2,3,5,7]
+let sum = 0
+
+for (let prime of primes){
+    sum += prime
+}
+
+console.log(sum)
+
+// for (setup; condition; afterEach){
+//     //some code 
+// }
+
+for (let count = 1; count <= 10; count +=1){
+    console.log(count);
+}
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+// }
+
+// theSimpsons.forEach(simpson => {
+// });
+
+
+
+
+//template literals
+
+//the old way
+// let name = 'Alex'
+// let greeting = 'Hello, ' + name + '!';
+// console.log(greeting)
+
+//the new way
+let name = 'Alex'
+let greeting = `Hello, ${name}!`
+console.log(greeting)
+
+//appending to the DOM
+
+let simpsonsList = document.querySelector('#simpsonsList')
+
+// # refers to an id
+// . refers to a class
+
+for (let simpson of theSimpsons){
+    simpsonsList.innerHTML += `<li>${simpson}</li>`;
+}
+
